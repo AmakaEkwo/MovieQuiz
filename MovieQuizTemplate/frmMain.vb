@@ -2,7 +2,7 @@
     Private Sub bntStart_Click(sender As Object, e As EventArgs) Handles bntStart.Click
         playerScore = 0
         playerName = txtPlayerName.Text
-        frmQuestion4.Show()
+        frmQuestion1.Show()
         Me.Hide()
     End Sub
 

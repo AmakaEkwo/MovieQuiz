@@ -3,13 +3,15 @@
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        If (btnAnswer4.Checked) Then
+    Private Sub frmQuestion5_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub btnNext_Click(sender As Object, e As EventArgs) Handles btnNext.Click
+        If (btnAnswer3.Checked) Then
             playerScore = playerScore + 1
         End If
-        frmHighScore.Show()
-        frmHighScore.doScore()
+        frmQuestion6.Show()
         Me.Hide()
-
     End Sub
 End Class
