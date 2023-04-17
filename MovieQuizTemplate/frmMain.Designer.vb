@@ -24,13 +24,13 @@ Partial Class frmMain
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.btnQuit = New System.Windows.Forms.Button()
+        Me.bntStart = New System.Windows.Forms.Button()
+        Me.txtPlayerName = New System.Windows.Forms.TextBox()
+        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -55,30 +55,40 @@ Partial Class frmMain
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Player Name"
         '
-        'Button1
+        'btnQuit
         '
-        Me.Button1.Location = New System.Drawing.Point(612, 336)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(95, 23)
-        Me.Button1.TabIndex = 3
-        Me.Button1.Text = "Quit"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnQuit.Location = New System.Drawing.Point(612, 336)
+        Me.btnQuit.Name = "btnQuit"
+        Me.btnQuit.Size = New System.Drawing.Size(95, 23)
+        Me.btnQuit.TabIndex = 3
+        Me.btnQuit.Text = "Quit"
+        Me.btnQuit.UseVisualStyleBackColor = True
         '
-        'Button2
+        'bntStart
         '
-        Me.Button2.Location = New System.Drawing.Point(612, 386)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(95, 30)
-        Me.Button2.TabIndex = 4
-        Me.Button2.Text = "Start"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.bntStart.Location = New System.Drawing.Point(612, 386)
+        Me.bntStart.Name = "bntStart"
+        Me.bntStart.Size = New System.Drawing.Size(95, 30)
+        Me.bntStart.TabIndex = 4
+        Me.bntStart.Text = "Start"
+        Me.bntStart.UseVisualStyleBackColor = True
         '
-        'TextBox1
+        'txtPlayerName
         '
-        Me.TextBox1.Location = New System.Drawing.Point(188, 368)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(190, 20)
-        Me.TextBox1.TabIndex = 5
+        Me.txtPlayerName.Location = New System.Drawing.Point(188, 368)
+        Me.txtPlayerName.Name = "txtPlayerName"
+        Me.txtPlayerName.Size = New System.Drawing.Size(190, 20)
+        Me.txtPlayerName.TabIndex = 5
+        '
+        'LinkLabel1
+        '
+        Me.LinkLabel1.AutoSize = True
+        Me.LinkLabel1.Location = New System.Drawing.Point(59, 0)
+        Me.LinkLabel1.Name = "LinkLabel1"
+        Me.LinkLabel1.Size = New System.Drawing.Size(59, 13)
+        Me.LinkLabel1.TabIndex = 9
+        Me.LinkLabel1.TabStop = True
+        Me.LinkLabel1.Text = "LinkLabel1"
         '
         'PictureBox3
         '
@@ -107,16 +117,6 @@ Partial Class frmMain
         Me.PictureBox1.TabIndex = 6
         Me.PictureBox1.TabStop = False
         '
-        'LinkLabel1
-        '
-        Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.Location = New System.Drawing.Point(59, 0)
-        Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(59, 13)
-        Me.LinkLabel1.TabIndex = 9
-        Me.LinkLabel1.TabStop = True
-        Me.LinkLabel1.Text = "LinkLabel1"
-        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -126,9 +126,9 @@ Partial Class frmMain
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.txtPlayerName)
+        Me.Controls.Add(Me.bntStart)
+        Me.Controls.Add(Me.btnQuit)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "frmMain"
@@ -143,9 +143,9 @@ Partial Class frmMain
 
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents btnQuit As Button
+    Friend WithEvents bntStart As Button
+    Friend WithEvents txtPlayerName As TextBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox3 As PictureBox
