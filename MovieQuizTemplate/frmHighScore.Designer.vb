@@ -23,7 +23,7 @@ Partial Class frmHighScore
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.IstHighScore = New System.Windows.Forms.ListBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
@@ -38,16 +38,16 @@ Partial Class frmHighScore
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Congratulations Your Score Will Be Addes To The Hall Of Fame"
         '
-        'ListBox1
+        'IstHighScore
         '
-        Me.ListBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.ItemHeight = 20
-        Me.ListBox1.Items.AddRange(New Object() {"Name" & Global.Microsoft.VisualBasic.ChrW(9) & Global.Microsoft.VisualBasic.ChrW(9) & "Score", "", "Rhoda" & Global.Microsoft.VisualBasic.ChrW(9) & Global.Microsoft.VisualBasic.ChrW(9) & "5", "", "Dave" & Global.Microsoft.VisualBasic.ChrW(9) & Global.Microsoft.VisualBasic.ChrW(9) & "5", "", "Amaka " & Global.Microsoft.VisualBasic.ChrW(9) & Global.Microsoft.VisualBasic.ChrW(9) & "10", "", "Justin " & Global.Microsoft.VisualBasic.ChrW(9) & Global.Microsoft.VisualBasic.ChrW(9) & "10"})
-        Me.ListBox1.Location = New System.Drawing.Point(111, 155)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(278, 164)
-        Me.ListBox1.TabIndex = 1
+        Me.IstHighScore.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.IstHighScore.FormattingEnabled = True
+        Me.IstHighScore.ItemHeight = 20
+        Me.IstHighScore.Items.AddRange(New Object() {"Name" & Global.Microsoft.VisualBasic.ChrW(9) & Global.Microsoft.VisualBasic.ChrW(9) & "Score", "", "Rhoda" & Global.Microsoft.VisualBasic.ChrW(9) & Global.Microsoft.VisualBasic.ChrW(9) & "5", "", "Dave" & Global.Microsoft.VisualBasic.ChrW(9) & Global.Microsoft.VisualBasic.ChrW(9) & "5", "", "Amaka " & Global.Microsoft.VisualBasic.ChrW(9) & Global.Microsoft.VisualBasic.ChrW(9) & "10", "", "Justin " & Global.Microsoft.VisualBasic.ChrW(9) & Global.Microsoft.VisualBasic.ChrW(9) & "10"})
+        Me.IstHighScore.Location = New System.Drawing.Point(111, 155)
+        Me.IstHighScore.Name = "IstHighScore"
+        Me.IstHighScore.Size = New System.Drawing.Size(278, 164)
+        Me.IstHighScore.TabIndex = 1
         '
         'Button1
         '
@@ -76,7 +76,7 @@ Partial Class frmHighScore
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.ListBox1)
+        Me.Controls.Add(Me.IstHighScore)
         Me.Controls.Add(Me.Label1)
         Me.Name = "frmHighScore"
         Me.Text = "frmHighScore"
@@ -86,7 +86,7 @@ Partial Class frmHighScore
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents IstHighScore As ListBox
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
 End Class

@@ -23,13 +23,13 @@ Partial Class frmQuestion1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
+        Me.btnAnswer1 = New System.Windows.Forms.RadioButton()
+        Me.btnAnswer2 = New System.Windows.Forms.RadioButton()
         Me.RadioButton3 = New System.Windows.Forms.RadioButton()
         Me.RadioButton4 = New System.Windows.Forms.RadioButton()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnNext = New System.Windows.Forms.Button()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -45,29 +45,29 @@ Partial Class frmQuestion1
         Me.Label1.Text = "In What Year Was Chimamanda Ngozi Adichie Born?"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'RadioButton1
+        'btnAnswer1
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton1.Location = New System.Drawing.Point(417, 181)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(67, 24)
-        Me.RadioButton1.TabIndex = 2
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "1977"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.btnAnswer1.AutoSize = True
+        Me.btnAnswer1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAnswer1.Location = New System.Drawing.Point(417, 181)
+        Me.btnAnswer1.Name = "btnAnswer1"
+        Me.btnAnswer1.Size = New System.Drawing.Size(67, 24)
+        Me.btnAnswer1.TabIndex = 2
+        Me.btnAnswer1.TabStop = True
+        Me.btnAnswer1.Text = "1977"
+        Me.btnAnswer1.UseVisualStyleBackColor = True
         '
-        'RadioButton2
+        'btnAnswer2
         '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton2.Location = New System.Drawing.Point(417, 228)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(67, 24)
-        Me.RadioButton2.TabIndex = 3
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "1970"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.btnAnswer2.AutoSize = True
+        Me.btnAnswer2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAnswer2.Location = New System.Drawing.Point(417, 228)
+        Me.btnAnswer2.Name = "btnAnswer2"
+        Me.btnAnswer2.Size = New System.Drawing.Size(67, 24)
+        Me.btnAnswer2.TabIndex = 3
+        Me.btnAnswer2.TabStop = True
+        Me.btnAnswer2.Text = "1970"
+        Me.btnAnswer2.UseVisualStyleBackColor = True
         '
         'RadioButton3
         '
@@ -111,27 +111,27 @@ Partial Class frmQuestion1
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
         '
-        'Button1
+        'btnNext
         '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(561, 390)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(121, 33)
-        Me.Button1.TabIndex = 7
-        Me.Button1.Text = "Next"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnNext.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnNext.Location = New System.Drawing.Point(561, 390)
+        Me.btnNext.Name = "btnNext"
+        Me.btnNext.Size = New System.Drawing.Size(121, 33)
+        Me.btnNext.TabIndex = 7
+        Me.btnNext.Text = "Next"
+        Me.btnNext.UseVisualStyleBackColor = True
         '
         'frmQuestion1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnNext)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.RadioButton4)
         Me.Controls.Add(Me.RadioButton3)
-        Me.Controls.Add(Me.RadioButton2)
-        Me.Controls.Add(Me.RadioButton1)
+        Me.Controls.Add(Me.btnAnswer2)
+        Me.Controls.Add(Me.btnAnswer1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label1)
         Me.Name = "frmQuestion1"
@@ -145,10 +145,10 @@ Partial Class frmQuestion1
 
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents RadioButton1 As RadioButton
-    Friend WithEvents RadioButton2 As RadioButton
+    Friend WithEvents btnAnswer1 As RadioButton
+    Friend WithEvents btnAnswer2 As RadioButton
     Friend WithEvents RadioButton3 As RadioButton
     Friend WithEvents RadioButton4 As RadioButton
     Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnNext As Button
 End Class
